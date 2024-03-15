@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <header>
+    <div class="navbar">
+        <div class="nav-logo">
+            <img src="./walmart_logo.png" alt="Logo">  
+        </div>
+
+        <!-- Updated Departments dropdown -->
+        <div class="relatives-icon">
+            <button class="dropdown-button" tabindex="0">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14 5.6C14 5.03995 14 4.75992 14.109 4.54601C14.2049 4.35785 14.3578 4.20487 14.546 4.10899C14.7599 4 15.0399 4 15.6 4H18.4C18.9601 4 19.2401 4 19.454 4.10899C19.6422 4.20487 19.7951 4.35785 19.891 4.54601C20 4.75992 20 5.03995 20 5.6V8.4C20 8.96005 20 9.24008 19.891 9.45399C19.7951 9.64215 19.6422 9.79513 19.454 9.89101C19.2401 10 18.9601 10 18.4 10H15.6C15.0399 10 14.7599 10 14.546 9.89101C14.3578 9.79513 14.2049 9.64215 14.109 9.45399C14 9.24008 14 8.96005 14 8.4V5.6Z" stroke="#ffffff" stroke-width="1.344" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4 5.6C4 5.03995 4 4.75992 4.10899 4.54601C4.20487 4.35785 4.35785 4.20487 4.54601 4.10899C4.75992 4 5.03995 4 5.6 4H8.4C8.96005 4 9.24008 4 9.45399 4.10899C9.64215 4.20487 9.79513 4.35785 9.89101 4.54601C10 4.75992 10 5.03995 10 5.6V8.4C10 8.96005 10 9.24008 9.89101 9.45399C9.79513 9.64215 9.64215 9.79513 9.45399 9.89101C9.24008 10 8.96005 10 8.4 10H5.6C5.03995 10 4.75992 10 4.54601 9.89101C4.35785 9.79513 4.20487 9.64215 4.10899 9.45399C4 9.24008 4 8.96005 4 8.4V5.6Z" stroke="#ffffff" stroke-width="1.344" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4 15.6C4 15.0399 4 14.7599 4.10899 14.546C4.20487 14.3578 4.35785 14.2049 4.54601 14.109C4.75992 14 5.03995 14 5.6 14H8.4C8.96005 14 9.24008 14 9.45399 14.109C9.64215 14.2049 9.79513 14.3578 9.89101 14.546C10 14.7599 10 15.0399 10 15.6V18.4C10 18.9601 10 19.2401 9.89101 19.454C9.79513 19.6422 9.64215 19.7951 9.45399 19.891C9.24008 20 8.96005 20 8.4 20H5.6C5.03995 20 4.75992 20 4.54601 19.891C4.35785 19.7951 4.20487 19.6422 4.10899 19.454C4 19.2401 4 18.9601 4 18.4V15.6Z" stroke="#ffffff" stroke-width="1.344" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14 15.6C14 15.0399 14 14.7599 14.109 14.546C14.2049 14.3578 14.3578 14.2049 14.546 14.109C14.7599 14 15.0399 14 15.6 14H18.4C18.9601 14 19.2401 14 19.454 14.109C19.6422 14.2049 19.7951 14.3578 19.891 14.546C20 14.7599 20 15.0399 20 15.6V18.4C20 18.9601 20 19.2401 19.891 19.454C19.7951 19.6422 19.6422 19.7951 19.454 19.891C19.2401 20 18.9601 20 18.4 20H15.6C15.0399 20 14.7599 20 14.546 19.891C14.3578 19.7951 14.2049 19.6422 14.109 19.454C14 19.2401 14 18.9601 14 18.4V15.6Z" stroke="#ffffff" stroke-width="1.344" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <span>Departments</span>
+            </button>
+            <!-- Dropdown menu for Departments -->
+            <div class="dropdown-menu">
+                <a href="#" style="font-weight: bold;">All Departments</a>
+                <a href="#">Deals</a>
+                <a href="#">Grocery</a>
+                <a href="#">Easter</a>
+                <a href="#">Home, Furniture & Appliances</a>
+                <a href="#">Clothing, Shoes & Accessories</a>
+                <a href="#">Electronics</a>
+                <a href="#">Patio & Garden</a>
+                <a href="#">Baby</a>
+                <a href="#">Kids</a>
+                <a href="#">Toys & Video Games</a>
+                <a href="#">Pharmacy, Health & Wellness</a>
+                <a href="#">Beauty</a>
+                <a href="#">Personal Care</a>
+                <a href="#">Auto & Tires</a>
+                <a href="#">Sports & Outdoors</a>
+                <a href="#">Pets</a>
+                <a href="#">Home Improvement</a>
+                <a href="#">Household Essentials</a>
+            </div>
+        </div>
+
+        <!-- Updated Services dropdown -->
+        <div class="relatives-icon">
+            <button class="dropdown-button" tabindex="0">
+                <svg width="17px" height="17px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>grid</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-104.000000, -935.000000)" fill="#ffffff"> <path d="M128,935 L124,935 C121.791,935 120,936.791 120,939 L120,943 C120,945.209 121.791,947 124,947 L128,947 C130.209,947 132,945.209 132,943 L132,939 C132,936.791 130.209,935 128,935 L128,935 Z M128,951 L124,951 C121.791,951 120,952.791 120,955 L120,959 C120,961.209 121.791,963 124,963 L128,963 C130.209,963 132,961.209 132,959 L132,955 C132,952.791 130.209,951 128,951 L128,951 Z M112,951 L108,951 C105.791,951 104,952.791 104,955 L104,959 C104,961.209 105.791,963 108,963 L112,963 C114.209,963 116,961.209 116,959 L116,955 C116,952.791 114.209,951 112,951 L112,951 Z M112,935 L108,935 C105.791,935 104,936.791 104,939 L104,943 C104,945.209 105.791,947 108,947 L112,947 C114.209,947 116,945.209 116,943 L116,939 C116,936.791 114.209,935 112,935 L112,935 Z" id="grid" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                <span>Services</span>
+            </button>
+            <!-- Dropdown menu for Services -->
+            <div class="dropdown-menu">
+                <a href="#" style="font-weight: bold;">All Service</a>
+                <a href="#">Auto Care Center Services</a>
+                <a href="#">Pharmacy</a>
+                <a href="#">Health & Wellness</a>
+                <a href="#">Registries, Lists & Gifts</a>
+                <a href="#">Custom Cakes</a>
+                <a href="#">Photo Services</a>
+                <a href="#">Money Services</a>
+                <a href="#">Protection, Home & Tech</a>
+                <a href="#">Subscriptions</a>
+                <a href="#">Community & Giving</a>
+                <a href="#">Ordering Online</a>
+                <a href="#">Get Inspired</a>
+            </div>
+        </div>
+
+
+        <div class="search-container relatives">
+            <input type="text" class="search-input" placeholder="Search everything at Walmart online and in store...">
+            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <button class="right-section btn-right">
+            <div class="recorder-icon">
+                <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+            </div>
+            <div>
+                <p>Recorder</p>
+                <h3>My Items</h3>
+            </div>  
+        </button>
+
+        <button class="right-section btn-right">
+            <div>
+                <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+            </div>
+            <div>
+                <p>Sign In</p>
+                <h3>Account</h3>
+            </div>
+        </button>        
+
+        <button class="cart btn-right">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+            <p>$0.00</p>
+        </button>
+    </div>
+    <br>
+    <hr class="nav-hr">
+
+    <div class="navbar-below">
+        <div class="btn-below">
+            <img src="./smartphone.png" style="height: 30px; width: auto;" alt="smartphone">
+            <p style="font-weight: bold;">What do you want your items?</p>
+            <i class="fa-solid fa-caret-down" style="color: #ffffff;"> |</i>
+            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+            <p> Kathmandu, 44600</p>
+            <i class="fa-solid fa-store" style="color: #ffffff;"></i>
+            <p>Sacramento Supercenter</p>  
+        </div> 
+        <div class="department-list">
+            <a href="#">Deals</a>
+            <a href="#">Grocery & Essentials</a>
+            <a href="#">Easter</a>
+            <a href="#">Baby Days</a>
+            <a href="#">Black & Unlimited</a>
+            <a href="#">Fashion</a>
+            <a href="#">Home</a>
+            <a href="#">Electronics</a>
+        </div>
+    </div>
+   </header>
+
+   <div class="hero-section grid-item">
+    <div class="left-side grid-item">
+        <div class="column heading">
+            <div class="card left-card-1">
+                <h4>Portable, packable tech</h4>
+                <p><a href="#" class="link">Shop now</a></p>
+            </div>
+            <div class="card left-card-2">
+                <h4>Just dropped, <br> up to $100 off</h4>
+                <p><a href="#" class="link">Shop Dyson</a></p>
+            </div>
+            <div class="card left-card-3">
+                <h4>Great buys on <br> luggage</h4>
+                <p><a href="#" class="link">Shop Fashion</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="middle grid-item">
+        <div class="column">
+            <div class="card middle-card-1">
+                <p>Hurry, ends soon!</p>
+                <p class="card-btn">
+                    <a href="#">Shop now</a>
+                </p>
+                
+            </div>
+            <div class="middle-card-2">
+                <div class="card middle-sub-card-1 heading">
+                    <h4>Travel-size. <br>Budget-friendly.</h4>
+                    <p><a href="#" class="link">Shop now</a></p>
+                </div>
+                <div class="card middle-sub-card-2 heading">
+                    <h4>Up to 40% off</h4>
+                <p><a href="#" class="link">Shop now</a></p>
+                </div>
+            </div>
+            <div class="card middle-card-3 heading">
+                <h4>Enjoy free same-day delivery, everyday <br> low prices + more!</h4>
+                <p>Terms Apply</p>
+                <p><a href="#" class="link">Join Walmart+</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="right-side grid-item">
+        <div class="column heading">
+            <div class="card right-card-1">
+                <h4>Sunney beach towel</h4>
+                <p><a href="#" class="link">Shop now</a></p>
+            </div>
+            <div class="card right-card-2">
+                <h4>Get your glow on</h4>
+                <p><a href="#" class="link">Shop skincare</a></p>
+            </div>
+            <div class="card right-card-3">
+                <h4>Bags that make a splash</h4>
+                <p><a href="#" class="link">Shop now</a></p>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <div class="flash-deals">
+    <h2>Flash deals</h2>
+    <p>Up to 65% off</p>
+    <div class="deal-items">
+        <div class="product-card">
+            <img src="./img/FD1.png" alt="Product Image">
+            <div class="info">
+              <div class="price">$89.99</div>
+              <div class="description">Pamo Babe Unisex Nursery Center Baby Playard with Bassinet & Changing Table</div>
+              <a href="#" class="button">+Add</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="./img/FD2.png" alt="Product Image">
+            <div class="info">
+              <div class="price">$49.99</div>
+              <div class="description">HARPPA Electric Baby Swing, Bluetooth Speaker, Remote Control, Gray</div>
+              <a href="#" class="button">Options</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="./img/FD3.png" alt="Product Image">
+            <div class="info">
+              <div class="price">$29.99</div>
+              <div class="description">WhatsBedding 3 Pieces Bed in a Bag Comforter Set Duvet Insert,Reversible,White,King</div>
+              <a href="#" class="button">Options</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="./img/FD4.png" alt="Product Image">
+            <div class="info">
+              <div class="price">$89.99</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+              <a href="#" class="button">Options</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="./img/FD5.png" alt="Product Image">
+            <div class="info">
+              <div class="price">$299.99</div>
+              <div class="description">King Mattress, Madinog 12" King Hybrid Mattress, Innerspring Mattress in a Box</div>
+              <a href="#" class="button">Options</a>
+            </div>
+          </div>
+          <div class="product-card">
+            <img src="./img/FD6.png" alt="Product Image">
+            <div class="info">
+              <div class="price">$99.99</div>
+              <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+              <a href="#" class="button">Options</a>
+            </div>
+          </div>
+    </div>
+   </div>
+   <HR class="hr-middle"></HR>
+
+    <div class="card-sec-4">
+        <div class="card-sec-sub-1">
+            <div class="card-sub-heading-1">
+                <h2>Perfectly pinch-proof</h2>
+                <p>Great green everything.</p>
+            </div>
+            <div class="card-sub-heading-2">
+                <div class="product-card card-sec-sub-one">
+                    <img src="./img/MD1.png" alt="Product Image">
+                    <div class="info">
+                        <div class="price">$5.98</div>
+                        <div class="description">Wonder Nation Girls Saint Patrick's Day Skirt, Sizes 4-18</div>
+                        <a href="#" class="button">Options</a>
+                    </div>
+                </div>
+                <div class="product-card card-sec-sub-two">
+                    <img src="./img/MD2.png" alt="Product Image">
+                    <div class="info">
+                        <div class="price">$5.98</div>
+                        <div class="description">Wonder Nation Girls Saint Patrick's Day Tee with Short Sleeves, Sizes 4-18</div>
+                        <a href="#" class="button">Options</a>
+                    </div>
+                </div>
+                <div class="product-card card-sec-sub-three">
+                    <img src="./img/MD3.png" alt="Product Image">
+                    <div class="info">
+                        <div class="price">$5.99</div>
+                        <div class="description">Wonder Nation Girls Saint Patrick's Day Leggings, Sizes 4-18</div>
+                        <a href="#" class="button">Options</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="card-sec-sub-2 card card-sec-right">
+            <p>St. Paddy's picks</p>
+            <h1>Lucky you!</h1>
+            <h4><a href="#" class="button">Shop now</a></h4>
+        </div>
+    </div>
+
+    <div class="big-card">
+        <div class="sub-big-card-1 card">
+            <p>Amezing values await.</p>
+            <h4><a href="#" class="button">Shop all</a></h4>
+        </div>
+        <div class="sub-big-card-2">
+            <div class="big-col-card-1 card">
+                <h2 class="card-heading">Save on colling, <br> tools & more</h2><br>
+                <a href="#">Shop home</a>
+            </div>
+            <div class="big-col-card-2">
+                <div class="sub-big-col-card-1 card">
+                    <h3 class="card-heading">Power up: low, <br> low prices</h3><br>
+                <a href="#">Shop tech</a>
+                </div>
+                <div class="sub-big-col-card-2 card">
+                    <h3 class="card-heading">Can't-miss <br> clearance</h3><br>
+                <a href="#">Shop fashion</a>
+                </div>
+            </div>
+        </div>
+        <div class="sub-big-card-3 card">
+            <p>Room refresh</p><br>
+            <h2 class="card-heading">Super-low prices all <br> over the place</h2><br>
+            <a href="#">Shop home</a>
+        </div>
+    </div>
+
+    <div class="flash-deals">
+        <h2>Save on pet picks</h2>
+        <p>Treats & more—go ahead & spoil them.</p>
+        <div class="deal-items">
+            <div class="product-card">
+                <img src="./img/PET1.png" alt="Product Image">
+                <div class="info">
+                  <div class="price">$15.98</div>
+                  <div class="description">Pamo Babe Unisex Nursery Center Baby Playard with Bassinet & Changing Table</div>
+                  <a href="#" class="button">+Add</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./img/PET2.png" alt="Product Image">
+                <div class="info">
+                  <div class="price">$199.99</div>
+                  <div class="description">HARPPA Electric Baby Swing, Bluetooth Speaker, Remote Control, Gray</div>
+                  <a href="#" class="button">Options</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./img/PET3.png" alt="Product Image">
+                <div class="info">
+                  <div class="price">$51.48</div>
+                  <div class="description">WhatsBedding 3 Pieces Bed in a Bag Comforter Set Duvet Insert,Reversible,White,King</div>
+                  <a href="#" class="button">Options</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./img/PET4.png" alt="Product Image">
+                <div class="info">
+                  <div class="price">$119.99</div>
+                  <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  <a href="#" class="button">Options</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./img/PET5.png" alt="Product Image">
+                <div class="info">
+                  <div class="price">$109.99</div>
+                  <div class="description">King Mattress, Madinog 12" King Hybrid Mattress, Innerspring Mattress in a Box</div>
+                  <a href="#" class="button">Options</a>
+                </div>
+              </div>
+              <div class="product-card">
+                <img src="./img/PET6.png" alt="Product Image">
+                <div class="info">
+                  <div class="price">$55.88</div>
+                  <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                  <a href="#" class="button">Options</a>
+                </div>
+              </div>
+        </div>
+       </div>
+       <HR class="hr-middle"></HR>
+    
+        <div class="card-sec-4">
+            <div class="card-sec-sub-1">
+                <div class="card-sub-heading-1">
+                    <h2>Perfectly pinch-proof</h2>
+                    <p>Great green everything.</p>
+                </div>
+                <div class="card-sub-heading-2">
+                    <div class="product-card card-sec-sub-one">
+                        <img src="./img/SE1.png" alt="Product Image">
+                        <div class="info">
+                            <div class="price">$5.98</div>
+                            <div class="description">Wonder Nation Girls Saint Patrick's Day Skirt, Sizes 4-18</div>
+                            <a href="#" class="button">Options</a>
+                        </div>
+                    </div>
+                    <div class="product-card card-sec-sub-two">
+                        <img src="./img/SE2.png" alt="Product Image">
+                        <div class="info">
+                            <div class="price">$5.98</div>
+                            <div class="description">Wonder Nation Girls Saint Patrick's Day Tee with Short Sleeves, Sizes 4-18</div>
+                            <a href="#" class="button">Options</a>
+                        </div>
+                    </div>
+                    <div class="product-card card-sec-sub-three">
+                        <img src="./img/SE3.png" alt="Product Image">
+                        <div class="info">
+                            <div class="price">$5.99</div>
+                            <div class="description">Wonder Nation Girls Saint Patrick's Day Leggings, Sizes 4-18</div>
+                            <a href="#" class="button">Options</a>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="card-sec-sub-2 card card-sec-right-se">
+                
+            </div>
+        </div>
+
+        <div class="large-card">
+            <div class="sub-large-card-1 card">
+                <p>What's in for outdoors.</p>
+                <h1>Patio picks for less</h1>
+                <h4><a href="#" class="button">Shop all</a></h4>
+            </div>
+            <div class="sub-large-card-2">
+                <div class="large-col-card-1 card">
+                    <p>Griddles & more</p>
+                    <h2 class="card-heading">Get fired up with <br> Blackstone</h2><br>
+                    <a href="#">Shop home</a>
+                </div>
+                <div class="large-col-card-2">
+                    <div class="sub-large-col-card-1 card">
+                        <h3 class="card-heading">Low prices on <br> Ozark Trail</h3><br>
+                    <a href="#">Shop tech</a>
+                    </div>
+                    <div class="sub-large-col-card-2 card">
+                        <h3 class="card-heading">Better Homes & <br> Gardens</h3><br>
+                    <a href="#">Shop fashion</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-large-card-3 card">
+                <p>Keep it cold</p><br>
+                <h2>RTIC coolers & more</h2><br>
+                <a href="#">Shop home</a>
+            </div>
+        </div>
+    
+        <div class="flash-deals">
+            <h2>Onward & outward</h2>
+            <p>Get everything out in the open.<p>
+            <div class="deal-items">
+                <div class="product-card">
+                    <img src="./img/OO1.png" alt="Product Image">
+                    <div class="info">
+                      <div class="price">$15.98</div>
+                      <div class="description">Pamo Babe Unisex Nursery Center Baby Playard with Bassinet & Changing Table</div>
+                      <a href="#" class="button">+Add</a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <img src="./img/OO2.png" alt="Product Image">
+                    <div class="info">
+                      <div class="price">$199.99</div>
+                      <div class="description">HARPPA Electric Baby Swing, Bluetooth Speaker, Remote Control, Gray</div>
+                      <a href="#" class="button">Options</a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <img src="./img/OO3.png" alt="Product Image">
+                    <div class="info">
+                      <div class="price">$51.48</div>
+                      <div class="description">WhatsBedding 3 Pieces Bed in a Bag Comforter Set Duvet Insert,Reversible,White,King</div>
+                      <a href="#" class="button">Options</a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <img src="./img/OO4.png" alt="Product Image">
+                    <div class="info">
+                      <div class="price">$119.99</div>
+                      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                      <a href="#" class="button">Options</a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <img src="./img/OO5.png" alt="Product Image">
+                    <div class="info">
+                      <div class="price">$109.99</div>
+                      <div class="description">King Mattress, Madinog 12" King Hybrid Mattress, Innerspring Mattress in a Box</div>
+                      <a href="#" class="button">Options</a>
+                    </div>
+                  </div>
+                  <div class="product-card">
+                    <img src="./img/OO6.png" alt="Product Image">
+                    <div class="info">
+                      <div class="price">$55.88</div>
+                      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                      <a href="#" class="button">Options</a>
+                    </div>
+                  </div>
+            </div>
+           </div>
+           <HR class="hr-middle"></HR>
+
+   <div class="footer">
+        <div class="feedback">
+            <p>We'd love to hear what  you think!</p>
+            <p class="feedback-btn">
+                <a href="#">Give feedback</a>
+            </p>
+        </div>
+        <div class="footer-link">
+            <p>
+                <a href="#">All Departments</a>
+                <a href="#">Store Directory</a>
+                <a href="#">Careers</a>
+                <a href="$">Our Company</a>
+                <a href="#">Sell & Walmart.com</a>
+                <a href="#">Help</a>
+                <a href="#">Product Recalls</a>
+                <a href="#">Accessibility</a> 
+                <a href="#">Tax Exempt Program</a>
+                <a href="#">Get the Walmart App</a>
+            </p>
+            <p>
+                <a href="#">Sign-up for Email</a>
+                <a href="#">Safety Data Sheet</a>
+                <a href="#">Terms of Use</a>
+                <a href="$">Privecy and Security</a>
+                <a href="#">California Supply Chain Act</a>
+                <a href="#">Your Privecy Choices</a>
+                <a href="#">Notice at Collection</a>
+            </p>
+            <p>
+                <a href="#">Request My Personal Information</a>
+                <a href="#">Brand Shop Directory</a>
+                <a href="#">Pharmacy</a>
+                <a href="$">Walmart Business</a>
+                <a href="#">#YWYK</a>
+            </p>
+            <div class="copyright">
+                <p>&#169; 2024 Sneha Sah, All Right Reserved.</p>
+            </div>
+        </div>
+   </div>
+
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdownButtons = document.querySelectorAll('.dropdown-button');
+
+        dropdownButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('show');
+            });
+        });
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.addEventListener('click', function(event) {
+            dropdownButtons.forEach(button => {
+                const dropdownMenu = button.nextElementSibling;
+                if (!button.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove('show');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
